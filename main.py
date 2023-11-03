@@ -30,7 +30,7 @@ start_time = time.time()
 
 if opt_method != 'DE':
 
-    result = minimize(optimization.objective_function_with_solar_and_battery_degradation_loan_v3, x0 = initial_guess, args = (a,), bounds=bounds, constraints = cons , method= opt_method)
+    result = minimize(optimization.objective_function, x0 = initial_guess, args = (a,), bounds=bounds, constraints = cons , method= opt_method)
 
 else:
     #load_profile_list = [annual_25_perc_ev, annual_50_perc_ev, annual_75_perc_ev, annual_100_perc_ev]

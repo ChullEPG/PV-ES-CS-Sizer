@@ -1,9 +1,6 @@
-import numpy as np
+#### Energy storage system specifications
 
-# # Battery cost
-# size = 2400 #Wh
-# cost_per_battery = 12308.12 # Rand
-# cost_per_wh = cost_per_battery/size
+import numpy as np
 
 # convert to kWh
 cost_per_kwh = 300 # $/kWh 
